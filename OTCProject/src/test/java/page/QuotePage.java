@@ -1,4 +1,9 @@
-
+/**
+ * Author: Jason Nierenburg
+ * Created Date: May 20 2015
+ * Overview: This page script covers all items in the top portion of the "http://www.otcmarkets.com/stock/OTCM/quote"
+ * This includes methods used to get the values from the webelements
+ */
 package page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +12,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class QuotePage {
-	WebDriver driver;
+	//WebDriver driver;
 
 	
 	/** left most column */
@@ -78,11 +83,15 @@ public class QuotePage {
 	WebElement tradeDate;
 	
 	public QuotePage(WebDriver driver){
-		this.driver = driver;
+//		this.driver = driver;
 		
 		PageFactory.initElements(driver, this);
 	}
 	
+	
+	
+	
+	/* METHODS */
 	//Get objects from QuotePage
 	/** left most column */
 	public String getLastPriceChg(){
@@ -131,5 +140,34 @@ public class QuotePage {
 	}
 	
 	/** headers */
-
+	//symbol
+	public String getSymbol(){
+		return symbol.getText();
+	}
+	
+	//companyName
+	public String getCompanyName(){
+		return companyName.getText();
+	}
+	
+	//class type
+	public String getClassType(){
+		return classType.getText();
+	}
+	//reporting type
+	public String getReportingType(){
+		return reportingType.getText();
+	}
+	//tier
+	public String getTier(){
+		return tier.getText();
+	}
+	//lawfirm
+	public String getLawFirm(){
+		return lawFirm.getText();
+	}
+	//Trade date / time
+	public String getTradeDate(){
+		return tradeDate.getText();
+	}
 }

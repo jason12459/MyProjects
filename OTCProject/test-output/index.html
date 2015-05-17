@@ -48,7 +48,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\JasonNierenburg\AppData\Local\Temp\testng-eclipse--1659142222\testng-customsuite.xml</span>
+                    <span>C:\Users\JasonNierenburg\AppData\Local\Temp\testng-eclipse--947858243\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,6 +102,16 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.HomePage" hash-for-method="test_quote_page">test_quote_page</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.HomePage" hash-for-method="test_quote_page_data_validation">test_quote_page_data_validation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="test.HomePage" hash-for-method="test_quote_page_items_exist">test_quote_page_items_exist</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -129,12 +139,26 @@
                   <span class="method-name">test_quote_page</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_quote_page_data_validation">
+                  </a> <!-- test_quote_page_data_validation -->
+                  <span class="method-name">test_quote_page_data_validation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="test_quote_page_items_exist">
+                  </a> <!-- test_quote_page_items_exist -->
+                  <span class="method-name">test_quote_page_items_exist</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Default_suite-class-passed -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\JasonNierenburg\AppData\Local\Temp\testng-eclipse--1659142222\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\JasonNierenburg\AppData\Local\Temp\testng-eclipse--947858243\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -183,16 +207,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'test_quote_page')
+data.setCell(0, 1, 'test_quote_page_items_exist')
 data.setCell(0, 2, 'test.HomePage')
-data.setCell(0, 3, 2030);
+data.setCell(0, 3, 2724);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'test_quote_page')
+data.setCell(1, 2, 'test.HomePage')
+data.setCell(1, 3, 2563);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'test_quote_page_data_validation')
+data.setCell(2, 2, 'test.HomePage')
+data.setCell(2, 3, 928);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -219,18 +251,26 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">test.HomePage</div> <!-- chronological-class-name -->
-              <div class="configuration-test before">
+              <div class="configuration-suite before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- configuration-test before -->
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">test_quote_page_items_exist</span>
+                <span class="method-start">517597 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">test_quote_page</span>
-                <span class="method-start">215199 ms</span>
+                <span class="method-start">520322 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-test after">
+              <div class="test-method">
+                <span class="method-name">test_quote_page_data_validation</span>
+                <span class="method-start">522886 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-suite after">
                 <span class="method-name">shutdown</span>
-                <span class="method-start">217231 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-start">523837 ms</span>
+              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
